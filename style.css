@@ -23,11 +23,16 @@ body {
     background-color: steelblue;
     grid-column: 1/1;
     grid-row: 1/3;
-    display: grid;
-    grid-template-rows: 1fr 3fr;
+    height: 100%;
 }
 
-.sidebar > div > h1,h3 {
+.sidebar-container {
+    display: grid;
+    height: 55%;
+    grid-template-rows: 1fr 3fr 2fr;
+}
+
+.sidebar-container > div > h1,h3 {
     color: white;
     text-align: center;
 }
@@ -73,13 +78,21 @@ body {
 
 .card-section {
     display: grid;
-    grid-template-rows: 1fr 15fr;
+    grid-template-rows: 1fr 20fr;
 }
 
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+}
+
+.project-card {
+    display: grid;
+    align-self: start;
+    height: 80%;
+    width: 90%;
+    background-color: white;
 }
 
 .update-card {
