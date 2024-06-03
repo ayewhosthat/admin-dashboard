@@ -6,17 +6,19 @@
 html, body {
     margin: 0; 
     height: 100%; 
+    
+    font-family: roboto-font;
 }
 
 .container {
     height: 100%;
+    
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 6fr;
 }
 
 .sidebar {
-    box-sizing: border-box;
     height: 100%;
     background-color: #0ea5e9;
     display: grid;
@@ -26,6 +28,7 @@ html, body {
 .main-content {
     box-sizing: border-box;
     height: 100%;
+    
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
@@ -36,19 +39,80 @@ html, body {
 }
 
 .header {
-    box-sizing: border-box;
-    height: 100%;
+    height: 100%;   
     display: grid;
     grid-row: 1/1;
     grid-column: 2/2;
+    grid-template-rows: 1fr 1fr;
+}
+
+.search-row, .name-row {
+    display: grid;
+    height: 100%;
+}
+
+.search-row {
+    grid-template-columns: 4fr 1fr;
+}
+
+.name-row {
+    grid-template-columns: 3fr 1fr;
+}
+
+.pfp-and-name, .new-upload-share {
+    display: grid;
+    height: 100%;
+}
+
+.pfp-and-name {
+    grid-template-columns: 1fr 6fr;
+}
+
+.new-upload-share {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.action-button-container {
+    height: 100%;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+}
+
+.action-button {
+    font-size: 1rem;
+    color: white;
+    height: 50%;
+    width: 80%;
+    font-weight: bold;
+    background-color: #3b82f6;
+    border-radius: 16px;
+}
+
+.search-icon-container {
+    height: 100%;
+    background-image: url("assets/search-web.svg");
+    background-size: cover;
+    position: relative;
 }
 
 .projects-section {
     height: 100%;
-    background-color: red;
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+}
+
+.card-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .announcements-trending {
     height: 100%;
-    background-color: green;
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
+
