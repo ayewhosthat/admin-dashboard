@@ -16,7 +16,7 @@ body {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 8fr;
 }
 
 .sidebar {
@@ -29,16 +29,58 @@ body {
 
 .sidebar > div > h1,h3 {
     color: white;
+    text-align: center;
 }
 
 .header {
     background-color: white;
     grid-column: 2/3;
     grid-row: 1/1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.name-row, .search-row {
+    display: grid;
+}
+
+.search-row {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.name-row {
+    grid-template-columns: 1fr 2fr;
 }
 
 .main-content {
-    background-color: teal;
+    padding-left: 2%; 
+    background-color: green;
     grid-column: 2/2;
     grid-row: 2/2;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.announcements-trending, .card-section {
+    display: grid;
+}
+
+.announcements-trending {
+    grid-template-rows: 1fr 1fr;
+}
+
+.card-section {
+    grid-template-rows: 1fr 15fr;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.update-card {
+    display: grid;
+    grid-template-rows: 1fr 10fr;
 }
