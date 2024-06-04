@@ -38,10 +38,13 @@ html, body {
 }
 
 .header {
+    box-sizing: border-box;
     height: 100%;   
     display: grid;
     grid-row: 1/1;
     grid-column: 2/2;
+    padding-left: 5%;
+    padding-right: 5%;
     grid-template-rows: 1fr 1fr;
 }
 
@@ -58,6 +61,16 @@ html, body {
     grid-template-columns: 3fr 1fr;
 }
 
+.large-pfp-container {
+    display: grid;
+    height: 100%;
+}
+
+.large-pfp-container > img {
+    height: 70%;
+    width: auto;
+}
+
 .pfp-and-name, .new-upload-share {
     display: grid;
     height: 100%;
@@ -72,10 +85,9 @@ html, body {
 }
 
 .action-button-container {
+    display: grid;
     height: 100%;
     width: 100%;
-    align-self: center;
-    justify-self: center;
 }
 
 .action-button {
@@ -86,6 +98,8 @@ html, body {
     font-weight: bold;
     background-color: #3b82f6;
     border-radius: 16px;
+    align-self: center;
+    justify-self: center;
 }
 
 .search-icon-container {
@@ -113,7 +127,7 @@ html, body {
     display: grid;
     grid-template-rows: 1fr 2fr 1fr;
     height: 90%;
-    width: 90%;
+    width: 70%;
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px grey;
@@ -173,4 +187,16 @@ html, body {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 3fr;
+}
+
+.friend-image {
+    display: grid;
+    height: 100%;
+}
+
+.friend-image > img {
+    height: 60%;
+    width: auto;
+    justify-self: center;
+    align-self: center;
 }
