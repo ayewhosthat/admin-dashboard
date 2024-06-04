@@ -150,6 +150,13 @@ html, body {
     grid-template-columns: repeat(3, 1fr);
 }
 
+.real-icon-container > img {
+    justify-self: center;
+    align-self: center;
+    height: 50%;
+    width: auto;
+}
+
 .announcements-trending {
     height: 100%;
     display: grid;
