@@ -27,15 +27,14 @@ html, body {
 
 .main-content {
     box-sizing: border-box;
-    height: 100%;
-    
+    height: 100%; 
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
     grid-row: 2/3;
     grid-column: 2/3;
     background-color: #e2e8f0;
-    padding: 4% 2% 3% 2%;
+    padding: 4% 2% 4% 2%;
 }
 
 .header {
@@ -107,11 +106,38 @@ html, body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.project-card {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    height: 90%;
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px grey;
+    padding: 15px;
+}
+
+.project-name {
+    align-self: center;
+}
+
+.icon-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.real-icon-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .announcements-trending {
     height: 100%;
-    
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
