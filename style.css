@@ -43,7 +43,7 @@ html, body {
 }
 
 .logo-container {
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
 }
 
 .action-icon, .action-name, .action {
@@ -102,8 +102,38 @@ html, body {
     grid-template-columns: 4fr 1fr;
 }
 
+.icon-and-bar {
+    height: 50%;
+    display: grid;
+}
+
+.bell-pfp-name {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.bell-pfp-name  p {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.bell, .pfp, .name {
+    display: grid;
+}
+
+.bell > img, .pfp > img, .name > p {
+    justify-self: center;
+    align-self: center;
+}
+
 .name-row {
     grid-template-columns: 3fr 1fr;
+}
+
+.greeting > .name {
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 .large-pfp-container {
@@ -138,7 +168,7 @@ html, body {
 .action-button {
     font-size: 1rem;
     color: white;
-    height: 50%;
+    height: 32px;
     width: 80%;
     font-weight: bold;
     background-color: #3b82f6;
