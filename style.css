@@ -6,13 +6,11 @@
 html, body {
     margin: 0; 
     height: 100%; 
-    
     font-family: roboto-font;
 }
 
 .container {
     height: 100%;
-    
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 6fr;
@@ -21,8 +19,55 @@ html, body {
 .sidebar {
     height: 100%;
     background-color: #0ea5e9;
+    color: white;
     display: grid;
     grid-row: 1/3;
+}
+
+.sidebar-content-container {
+    height: 50%;
+    display: grid;
+    grid-template-rows: 1fr 6fr 3fr;
+}
+
+.logo-container, .six-actions, .three-actions {
+    display: grid;
+}
+
+.six-actions {
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.three-actions {
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.logo-container {
+    grid-template-columns: 1fr 5fr;
+}
+
+.action-icon, .action-name, .action {
+    height: 100%;
+    display: grid;
+}
+
+.action {
+    grid-template-columns: 1fr 4fr;
+}
+
+.action-icon > img {
+    height: 40%;
+    width: auto;
+}
+
+.action-icon > img {
+    justify-self: center;
+    align-self: center;
+}
+
+.action-name > h2 {
+    align-self: center;
+    justify-self: start;
 }
 
 .main-content {
