@@ -1,0 +1,275 @@
+@font-face {
+    font-family: roboto-font;
+    src: url("assets/Roboto-Regular.ttf");
+}
+
+html, body {
+    margin: 0; 
+    height: 100%; 
+    font-family: roboto-font;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 6fr;
+}
+
+.sidebar {
+    height: 100%;
+    background-color: #0ea5e9;
+    color: white;
+    display: grid;
+    grid-row: 1/3;
+}
+
+.sidebar-content-container {
+    height: 50%;
+    display: grid;
+    grid-template-rows: 1fr 6fr 3fr;
+}
+
+.logo-container, .six-actions, .three-actions {
+    display: grid;
+}
+
+.six-actions {
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.three-actions {
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.logo-container {
+    grid-template-columns: 1fr 5fr;
+}
+
+.action-icon, .action-name, .action {
+    height: 100%;
+    display: grid;
+}
+
+.action {
+    grid-template-columns: 1fr 4fr;
+}
+
+.action-icon > img {
+    height: 40%;
+    width: auto;
+}
+
+.action-icon > img {
+    justify-self: center;
+    align-self: center;
+}
+
+.action-name > h2 {
+    align-self: center;
+    justify-self: start;
+}
+
+.main-content {
+    box-sizing: border-box;
+    height: 100%; 
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-color: #e2e8f0;
+    padding: 4% 2% 4% 2%;
+}
+
+.header {
+    box-sizing: border-box;
+    height: 100%;   
+    display: grid;
+    grid-row: 1/1;
+    grid-column: 2/2;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-template-rows: 1fr 1fr;
+}
+
+.search-row, .name-row {
+    display: grid;
+    height: 100%;
+}
+
+.search-row {
+    grid-template-columns: 4fr 1fr;
+}
+
+.bell-pfp-name {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.bell-pfp-name  p {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.bell-pfp-name img, .bell-pfp-name p {
+    justify-self: center;
+    align-self: center;
+}
+
+.name-row {
+    grid-template-columns: 3fr 1fr;
+}
+
+.greeting > .name {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.large-pfp-container {
+    display: grid;
+    height: 100%;
+}
+
+.large-pfp-container > img {
+    height: 70%;
+    width: auto;
+}
+
+.pfp-and-name, .new-upload-share {
+    display: grid;
+    height: 100%;
+}
+
+.pfp-and-name {
+    grid-template-columns: 1fr 6fr;
+}
+
+.new-upload-share {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.action-button-container {
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+
+.action-button {
+    font-size: 1rem;
+    color: white;
+    height: 50%;
+    width: 80%;
+    font-weight: bold;
+    background-color: #3b82f6;
+    border-radius: 16px;
+    align-self: center;
+    justify-self: center;
+}
+
+.search-icon-container {
+    height: 100%;
+    background-image: url("assets/search-web.svg");
+    background-size: cover;
+    position: relative;
+}
+
+.projects-section {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+}
+
+.card-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.project-card {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    height: 90%;
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px grey;
+    padding: 15px;
+}
+
+.project-name {
+    align-self: center;
+}
+
+.icon-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.real-icon-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.real-icon-container > img {
+    justify-self: center;
+    align-self: center;
+    height: 50%;
+    width: auto;
+}
+
+.announcements-trending {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.announcements-container, .trending-container {
+    height: 100%;
+    /* display: grid; */
+}
+
+.announcements {
+    display: grid;
+    box-sizing: border-box;
+    padding: 10%;
+    background-color: white;
+    border-radius: 16px;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.middle-announcement {
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+}
+
+.trending {
+    display: grid;
+    background-color: white;
+    border-radius: 16px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.friend {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.friend-image {
+    display: grid;
+    height: 100%;
+}
+
+.friend-image > img {
+    height: 60%;
+    width: auto;
+    justify-self: center;
+    align-self: center;
+}
